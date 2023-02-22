@@ -1,0 +1,73 @@
+body{
+    color:white;
+    background-color:black;
+
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+#clockcontainer{
+    position: relative;
+    display:flex;
+    margin:auto;
+    margin-top:50px;
+    background: url(rclock.png) no-repeat;
+    width:500px;
+    height:500px;
+    background-size:100%;
+    padding:20px;
+}
+@media (min-width:100px) and (max-width:560px){
+    #clockcontainer{
+        width:200px;
+        height:200px;
+    }
+}
+
+#hours, #minutes, #seconds{
+    position:absolute;
+    border-radius:30px;
+    transform-origin: bottom;
+}
+
+#hours{
+    background:black;
+    width: 2%;
+    height: 30%;
+    top: 19.7%;
+    left: 49.5%;
+    z-index:3;
+    
+}
+
+#minutes{
+    background:black;
+    width: 1.6%;
+    height: 31%;
+    top: 19.2%;
+    left: 49%;
+    z-index:3;
+}
+
+#seconds{
+    background:red;
+    z-index:2;
+    width: 1.2%;
+    height: 36%;
+    top: 14%;
+    left: 49.1%;
+}
+
+h1,span{
+    text-align:center;
+}
+span{
+    display:block;
+    text-align:center;
+}
+
+
